@@ -1,0 +1,38 @@
+// breakpoints for media
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'widescreen': 1200px
+);
+
+//fonts
+@import 'basic-settings/variables';
+@import 'common-settings/icons';
+@import 'common-settings/include-media';
+@import 'common-settings/normalize';
+@import 'basic-settings/mixins';
+@import 'basic-settings/helpers';
+@import 'common-settings/fonts';
+@import 'basic-settings/reset';
+
+
+body {
+  color: $base-text-color;
+  background: $base-background-color;
+  min-width: $base-min-width;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 936px;
+  padding: 0 15px;
+}
+
