@@ -30,9 +30,36 @@ body {
   overflow: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 936px;
-  padding: 0 15px;
+h2 {
+  text-transform: uppercase;
+}
+
+
+.invertor-choose {
+  text-align: center;
+  .thumbnail {
+    a {
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #000;
+    }
+  } 
+}
+
+.all-invertors-link {
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    background: orange;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 3px;
+    border-left: 2px solid red;
+    border-bottom: 3px solid red;
+  }
 }
 
