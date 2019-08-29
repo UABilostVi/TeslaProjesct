@@ -7,6 +7,46 @@ $breakpoints: (
   'widescreen': 1200px
 );
 
+
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+
 //fonts
 @import 'basic-settings/variables';
 @import 'common-settings/icons';
@@ -32,19 +72,27 @@ body {
 
 h2 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 
 .invertor-choose {
   text-align: center;
   .thumbnail {
+    height: 290px;
+    font-size: 16px;
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.35);
     a {
       display: inline-block;
       padding: 10px;
       border: 1px solid #000;
-      border-radius: 3px;
+      border-radius: 2px;
       text-decoration: none;
       color: #000;
+      text-transform: uppercase;
+      font-size: inherit;
     }
   } 
 }
@@ -58,8 +106,19 @@ h2 {
     text-decoration: none;
     color: #000;
     border-radius: 3px;
-    border-left: 2px solid red;
-    border-bottom: 3px solid red;
+    border-left: 1px solid #c19800;
+    border-bottom: 3px solid #c19800;
+    background-image: linear-gradient(to bottom, #fede00, #fed900, #fed400, #fecf00, #feca00);
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.35);
+      -moz-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.35);
+      box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.35);
+  }
+}
+
+.advantages {
+  font-size: 18px;
+  h4 {
+    text-transform: uppercase;
   }
 }
 
